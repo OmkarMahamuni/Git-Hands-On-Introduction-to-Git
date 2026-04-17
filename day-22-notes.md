@@ -23,3 +23,5 @@
         - **Working Directory:** Your actual desk. This is where you are currently typing, creating, and deleting files. Git sees these changes but isn't tracking them yet.
         - **Staging Area (Index):** The loading dock. You move specific changes here (`git add`) to prepare them for the next save.
         - **Local Repository:** The vault. This is where Git permanently stores the snapshots (`git commit`) of your project inside the `.git/` folder.
+
+## this is commit no 4
