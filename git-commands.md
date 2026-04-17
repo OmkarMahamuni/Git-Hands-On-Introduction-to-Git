@@ -22,3 +22,7 @@
   * *Example:* `git log` or `git log --oneline` for a one line compact view.
 * **`git diff`**: Shows the exact lines of code that were added or deleted since the last commit.
   * *Example:* `git diff`
+
+## Commit no 2
+
+* This is commit no 2
