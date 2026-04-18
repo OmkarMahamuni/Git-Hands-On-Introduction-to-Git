@@ -26,3 +26,22 @@
 ## Commit no 2
 
 * This is commit no 2
+
+# Branching & Merging
+* **`git branch`**: Lists all the branches in your local repository. The current branch is highlighted with a `*`.
+  * *Example:* `git branch`
+* **`git branch <name>`**: Creates a new branch but does *not* switch to it.
+  * *Example:* `git branch feature-login`
+* **`git switch <name>`**: Moves your working directory to the specified branch. (This is the modern, safer alternative to `git checkout`).
+  * *Example:* `git switch feature-login`
+* **`git switch -c <name>`**: Creates a new branch AND switches to it in one single command.
+  * *Example:* `git switch -c bugfix-header`
+* **`git branch -d <name>`**: Safely deletes a branch (only if it has been merged). Use `-D` to force delete an unmerged branch.
+  * *Example:* `git branch -d feature-2`
+
+## Remote Repositories (GitHub)
+* **`git remote add origin <url>`**: Connects your local repository to a remote server (like GitHub). "Origin" is just the default nickname for that server.
+* **`git push -u origin <branch>`**: Uploads your local branch commits to the remote server. The `-u` flag links your local branch to the remote branch so future pushes just require typing `git push`.
+  * *Example:* `git push -u origin main`
+* **`git pull`**: Downloads changes from the remote repository and immediately merges them into your current local branch.
+
