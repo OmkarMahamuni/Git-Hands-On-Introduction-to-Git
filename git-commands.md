@@ -45,3 +45,20 @@
   * *Example:* `git push -u origin main`
 * **`git pull`**: Downloads changes from the remote repository and immediately merges them into your current local branch.
 
+## Advanced Merging & History
+* **`git merge <branch>`**: Takes the commits from the specified branch and integrates them into your *current* branch.
+  * *Example:* `git merge feature-login` (while currently on `main`).
+* **`git merge --squash <branch>`**: Takes all the commits from the specified branch, squashes them down into a single massive uncommitted change in your working directory, ready for you to make one clean commit.
+* **`git rebase <target-branch>`**: Picks up your current branch and physically moves its starting point to the very tip of the target branch. It rewrites history to make it look like you built your feature sequentially, rather than in parallel.
+  * *Example:* `git rebase main` (while currently on a feature branch).
+* **`git cherry-pick <commit-hash>`**: Reaches into another branch, grabs the changes from *one specific commit*, and applies those changes as a brand new commit on your current branch.
+  * *Example:* `git cherry-pick a1b2c3d`
+
+## Stashing (The Context Switcher)
+* **`git stash`**: Takes all your modified, uncommitted tracked files and hides them away in a temporary clipboard, returning your working directory to a clean state.
+* **`git stash list`**: Shows all the different stashes you have saved.
+* **`git stash pop`**: Takes the most recently stashed changes, applies them back to your working directory, and *deletes* the stash from the clipboard.
+* **`git stash apply`**: Applies the stashed changes but *keeps* the stash in the clipboard so you can apply it again later (or to another branch).
+
+## History Visualization
+* **`git log --oneline --graph --all`**: The ultimate command to visualize the branching and merging history of your entire repository like a subway map.
