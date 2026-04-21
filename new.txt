@@ -1,6 +1,3 @@
 X
-<<<<<<< HEAD
 Y
 Z
-=======
->>>>>>> parent of abcdb1b (Commit Y)
