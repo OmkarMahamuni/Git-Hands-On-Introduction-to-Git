@@ -62,3 +62,10 @@
 
 ## History Visualization
 * **`git log --oneline --graph --all`**: The ultimate command to visualize the branching and merging history of your entire repository like a subway map.
+
+## Undoing Mistakes (Reset & Revert)
+* `git reset --soft HEAD~1`: Undoes the last commit, but keeps the files modified and staged.
+* `git reset --mixed HEAD~1`: (Default). Undoes the last commit, keeps the files modified, but unstages them.
+* `git reset --hard HEAD~1`: ⚠️ DANGEROUS. Undoes the last commit AND deletes all file changes.
+* `git revert <hash>`: Creates a brand new commit that does the exact opposite of the specified commit, preserving history.
+* `git reflog`: The ultimate safety net. Shows a log of every single action you've taken, allowing you to recover from bad hard resets.
