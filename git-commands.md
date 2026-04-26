@@ -69,3 +69,16 @@
 * `git reset --hard HEAD~1`: ⚠️ DANGEROUS. Undoes the last commit AND deletes all file changes.
 * `git revert <hash>`: Creates a brand new commit that does the exact opposite of the specified commit, preserving history.
 * `git reflog`: The ultimate safety net. Shows a log of every single action you've taken, allowing you to recover from bad hard resets.
+
+## GitHub CLI (`gh`)
+* **`gh auth login`**: Authenticates your terminal with your GitHub account.
+* **`gh repo create <name> --public --clone`**: Creates a new public repository on GitHub and immediately clones it to your local machine.
+* **`gh repo view --web`**: Opens the current repository in your default web browser.
+* **`gh issue create --title "..." --body "..."`**: Creates a new GitHub Issue for the current repository.
+* **`gh issue list`**: Lists all open issues for the current repository.
+* **`gh pr create --fill`**: Creates a Pull Request on GitHub using your current branch, auto-filling the title and body from your commits.
+* **`gh pr list`**: Lists all open Pull Requests.
+* **`gh pr merge`**: Merges the current Pull Request (interactive menu).
+* **`gh pr checkout <number>`**: Downloads the code from someone else's Pull Request so you can test it locally before approving it.
+* **`gh run list`**: Lists recent GitHub Actions workflow runs.
+* **`gh repo delete <name> --yes`**: Deletes a repository from GitHub permanently.
